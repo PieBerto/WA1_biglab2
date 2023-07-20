@@ -1,0 +1,25 @@
+POST http://localhost:3001/films
+Content-Type: application/json
+{   
+    "title": "99XXX",
+    "favorite": true,
+    "date": "2022-05-12",
+    "rating" : 5
+}
+
+### 
+GET http://localhost:3001/films/29
+
+### 
+GET http://localhost:3001/films?filter=last-seen
+
+###
+DELETE http://localhost:3001/films/6
+
+###
+PATCH  http://localhost:3001/films/1
+Content-Type: application/json
+
+{
+    "favorite" : 0
+}
